@@ -1,5 +1,4 @@
 # spot
-spot web portal
 
 Steps to build and launch the application.
 
