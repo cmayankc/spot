@@ -1,0 +1,261 @@
+{
+	"tables": [
+		{
+			"name": "Table 1",
+			"table": 1,
+			"seats": [
+				{
+					"status": "occupied",
+					"employee": {
+						"name": "Shilpy",
+						"role": "SR Developer",
+						"profileImage": "/spot/img/profile.png",
+						"team": "Mobile Frontend",
+						"project": "Dell App Design"
+					}
+				},
+				{
+					"status": "occupied",
+					"table": 1,
+					"employee": {
+						"name": "John",
+						"role": "JR Developer",
+						"profileImage": "/spot/img/profile2.png",
+						"team": "Desktop Frontend",
+						"project": "Messaging App Design"
+					}
+				},
+				{
+					"status": "vacant",
+					"table": 1,
+					"employee": null
+				},
+				{
+					"status": "occupied",
+					"table": 1,
+					"employee": {
+						"name": "Kiran",
+						"role": "Technical Lead",
+						"profileImage": "/spot/img/profile.png",
+						"team": "Mobile Frontend",
+						"project": "Dell App Design"
+					}
+				}
+			]
+		},
+		{
+			"name": "Table 2",
+			"seats": [
+				{
+					"status": "occupied",
+					"table": 2,
+					"employee": {
+						"name": "Arun",
+						"role": "SR Developer",
+						"profileImage": "/spot/img/profile2.png",
+						"team": "Mobile Frontend",
+						"project": "Dell App Design"
+					}
+				},
+				{
+					"status": "occupied",
+					"table": 2,
+					"employee": {
+						"name": "Kedar",
+						"role": "JR Developer",
+						"profileImage": "/spot/img/profile.png",
+						"team": "Desktop Frontend",
+						"project": "Messaging App Design"
+					}
+				},
+				{
+					"status": "vacant",
+					"table": 2,
+					"employee": null
+				},
+				{
+					"status": "occupied",
+					"employee": {
+						"name": "Sudheer",
+						"role": "Technical Lead",
+						"profileImage": "/spot/img/profile2.png",
+						"team": "Mobile Frontend",
+						"project": "Dell App Design"
+					}
+				}
+			]
+		},
+		{
+			"name": "Table 3",
+			"seats": [
+				{
+					"status": "occupied",
+					"table": 3,
+					"employee": {
+						"name": "Rajesh",
+						"role": "SR Developer",
+						"profileImage": "/spot/img/profile.png",
+						"team": "Mobile Frontend",
+						"project": "Dell App Design"
+					}
+				},
+				{
+					"status": "occupied",
+					"table": 3,
+					"employee": {
+						"name": "Neha",
+						"role": "JR Developer",
+						"profileImage": "/spot/img/profile2.png",
+						"team": "Desktop Frontend",
+						"project": "Messaging App Design"
+					}
+				},
+				{
+					"status": "vacant",
+					"table": 3,
+					"employee": null
+				},
+				{
+					"status": "occupied",
+					"table": 3,
+					"employee": {
+						"name": "Srini",
+						"role": "Technical Lead",
+						"profileImage": "/spot/img/profile.png",
+						"team": "Mobile Frontend",
+						"project": "Dell App Design"
+					}
+				}
+			]
+		},
+		{
+			"name": "Table 4",
+			"seats": [
+				{
+					"status": "occupied",
+					"table": 4,
+					"employee": {
+						"name": "Stella",
+						"role": "SR Developer",
+						"profileImage": "/spot/img/profile2.png",
+						"team": "Mobile Frontend",
+						"project": "Dell App Design"
+					}
+				},
+				{
+					"status": "occupied",
+					"table": 4,
+					"employee": {
+						"name": "James",
+						"role": "JR Developer",
+						"profileImage": "/spot/img/profile.png",
+						"team": "Desktop Frontend",
+						"project": "Messaging App Design"
+					}
+				},
+				{
+					"status": "vacant",
+					"table": 4,
+					"employee": null
+				},
+				{
+					"status": "occupied",
+					"table": 4,
+					"employee": {
+						"name": "Lalit",
+						"role": "Technical Lead",
+						"profileImage": "/spot/img/profile2.png",
+						"team": "Mobile Frontend",
+						"project": "Dell App Design"
+					}
+				}
+			]
+		},
+		{
+			"name": "Table 5",
+			"seats": [
+				{
+					"status": "occupied",
+					"table": 5,
+					"employee": {
+						"name": "Nikita",
+						"role": "SR Developer",
+						"profileImage": "/spot/img/profile.png",
+						"team": "Mobile Frontend",
+						"project": "Dell App Design"
+					}
+				},
+				{
+					"status": "occupied",
+					"table": 5,
+					"employee": {
+						"name": "Anita",
+						"role": "JR Developer",
+						"profileImage": "/spot/img/profile2.png",
+						"team": "Desktop Frontend",
+						"project": "Messaging App Design"
+					}
+				},
+				{
+					"status": "vacant",
+					"table": 5,
+					"employee": null
+				},
+				{
+					"status": "occupied",
+					"table": 5,
+					"employee": {
+						"name": "Mandy",
+						"role": "Technical Lead",
+						"profileImage": "/spot/img/profile.png",
+						"team": "Mobile Frontend",
+						"project": "Dell App Design"
+					}
+				}
+			]
+		},
+		{
+			"name": "Table 6",
+			"seats": [
+				{
+					"status": "occupied",
+					"table": 6,
+					"employee": {
+						"name": "Van",
+						"role": "SR Developer",
+						"profileImage": "/spot/img/profile2.png",
+						"team": "Mobile Frontend",
+						"project": "Dell App Design"
+					}
+				},
+				{
+					"status": "occupied",
+					"table": 6,
+					"employee": {
+						"name": "Catalina",
+						"role": "JR Developer",
+						"profileImage": "/spot/img/profile.png",
+						"team": "Desktop Frontend",
+						"project": "Messaging App Design"
+					}
+				},
+				{
+					"status": "vacant",
+					"table": 6,
+					"employee": null
+				},
+				{
+					"status": "occupied",
+					"table": 6,
+					"employee": {
+						"name": "Don",
+						"role": "Technical Lead",
+						"profileImage": "/spot/img/profile2.png",
+						"team": "Mobile Frontend",
+						"project": "Dell App Design"
+					}
+				}
+			]
+		}
+	]
+}

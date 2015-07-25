@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="spot-app">
+	<head>
+		<!-- Title -->
+  		<title> Spot </title>
+  		<!--Meta-->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Styles-->
+		<link rel="stylesheet" href="css/vendor.css">
+		<link rel="stylesheet" href="css/app.css">
+
+	</head>
+	<body>
+		<!-- APP CONTAINER -->
+		<div class="container" ng-controller="AppCtrl as vm">
+			<div ng-if="vm.appLoaded">
+				<div class="row">
+					<!-- LOGO -->
+					<div class="col-md-12">
+						<div class="logo">Spot</div>
+					</div>
+				</div>
+				
+				<!-- FILTERS AND SEARCH -->
+				<div class="row">
+					<div class="col-md-6 pull-left">
+						<h2> Sprinklr Office </h2>
+					</div>
+					<div class="col-md-6 pull-right text-right input">
+						<input type="text" class="search" ng-model="vm.query" placeholder="Search" ng-change="vm.applySearchFilter()"/>
+						<button class="filter-btn" filters-popover></button>
+					</div>
+				</div>
+
+				<!-- TABLES AND SEATS -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="floor clearfix">
+							<div class="table" ng-repeat="table in vm.tables">
+								<div class="tabletop">
+									<span>{{table.name}}</span>
+								</div>
+								<div class="person pos{{$index}}" 
+									ng-repeat="seat in table.seats track by $index" 
+									ng-model="table.seats[$index]"
+									ng-class="{'occupied': seat.status === 'occupied', 'vacant': seat.status === 'vacant', 'selected': seat.searched && vm.query, 'filtered': seat.filterStatus === 'selected'}" 
+									draggable="{{seat.status === 'occupied'}}"
+									draggable
+									on-drop="vm.onDrop(message)">
+									<div class="popover-trigger" 
+										profile 
+										data="seat.employee" 
+										template-url="/spot/partials/profile.html" 
+										ng-if="seat.employee">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row moveConfirmation" ng-if="vm.moveConfirmation"> {{vm.moveConfirmation}} </div>
+			</div>
+		</div>
+	
+		<!-- SCRIPTS -->
+		<script src="js/vendor.js"></script>
+    	<script src="js/app.js"></script>
+    	<script src="js/templates.js"></script>
+
+	</body>
+</html>

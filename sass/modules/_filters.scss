@@ -1,0 +1,30 @@
+.filters-popup {
+	min-width: 350px;
+
+	.tip {
+		border: solid 11px;
+		border-color: transparent;
+		position: absolute;
+		border-bottom-color: $white;
+		right: 16px;
+		top: -11px;
+		margin-top: -11px
+	}
+
+	.tabs {
+		border-bottom: 2px solid $dustygray;
+
+		.clearfix {
+			float: none !important;
+		}
+	}
+
+	label {
+		float: left;
+		min-width: 150px;
+	}
+
+	.content {
+		padding: 5px 0px;
+	}
+}

@@ -1,0 +1,184 @@
+// VARIABLES
+
+// COLORS
+$white: #FFFFFF;
+$black: #000000;
+$red: #FF0000;
+$codgray: #1A1A1A;
+$alto: #DCDCDC;
+$dustygray: #999999;
+$mercury: #E6E6E6;
+$moroccobrown: #4B1900;
+$cerulean: #00ADEF;
+$ceruleanblue: #2E5CB8;
+$graychateau: #A7A9AB;
+$silversand: #B8B9BA;
+
+// TYPOGRAPHY
+$primary-font: "Source Sans Pro" sans-serif !important;
+$primary-font-color: $black;
+$primary-font-size: 14px;
+
+$line-height: 1.65em;
+$body-padding: 50px;
+
+
+html {
+  font-family: $primary-font;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: $primary-font;
+  font-size: $primary-font-size;
+  line-height: $line-height;
+  color: $codgray;
+  background-color: $alto;
+  padding: $body-padding;
+}
+
+.wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.container {
+
+  .input {
+    margin-top: 20px;
+
+    .search {
+      background-image: url(../img/search.png);
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position: 195px 4px;
+      border: 1px solid gray;
+      height: 30px;
+      width: 220px;
+      padding: 10px;
+      margin-right: 10px;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .filter-btn {
+      background-image: url(../img/filter.png);
+      width: 40px;
+      background-repeat: no-repeat;
+      background-color: $white;
+      background-size: 21px;
+      height: 30px;
+      border: 1px solid $dustygray;
+      background-position: 8px 3px;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+    background-color: $dustygray;
+    color: $white;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 50%;
+    font-size: 24px;
+  }
+
+  .floor {
+    background-color: $white;
+    border: 1px solid $dustygray;
+    padding: 60px 60px 0 0;
+  }
+
+  .table {
+    width: 158px;
+    height: 100px;
+    background-color: $alto;
+    float: left;
+    margin: 0px 0px 60px 60px;
+    position: relative;
+
+    .tabletop {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: $alto;
+      border: 1px solid $white;
+      z-index: 10;
+      text-align: center;
+      padding: 35px;
+    }
+
+    .person {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: $mercury;
+      position: absolute;
+      z-index: 9;
+    }
+
+    .occupied {
+      background-color: $moroccobrown;
+    }
+
+    .vacant {
+      background-color: $alto;
+    }
+
+    .selected, .filtered {
+      background-color: $cerulean;
+    }
+
+    .person.occupied:hover {
+      background-color: $ceruleanblue;
+    }
+
+    .person[draggable='true'] {
+      cursor: move;
+    }
+
+    .dragging {
+      opacity: 0.5;
+      background-color: $red !important;
+    }
+
+    .pos0 { /*Top Left*/
+      top: -18px;
+      left: 20px;
+    }
+
+    .pos1 { /*Top Right*/
+      top: -18px;
+      right: 20px;
+    }
+
+    .pos2 { /*Bottom Left*/
+      bottom: -18px;
+      left: 20px;
+    }
+
+    .pos3 { /*Bottom Right*/
+      bottom: -18px;
+      right: 20px;
+    }
+
+    .popover-trigger {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .moveConfirmation {
+    background-color: $graychateau;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0px;
+    color: $white;
+  }
+}

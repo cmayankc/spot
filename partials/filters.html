@@ -1,0 +1,19 @@
+<div class="spot-popover filters-popup" ng-init="filterSelection">
+	<div class="tip"></div>
+	<div class="tabs">
+		<div class="pull-left">
+			<label><input type="checkbox" ng-model="filterSelection.teamOn"/> Team </label>
+		</div>
+		<div>
+			<label class="clearfix"><input type="checkbox" ng-model="filterSelection.roleOn"/> Job Title </label>
+		</div>
+	</div>
+	<div class="content">
+		<div class="" ng-repeat="team in filters.team track by $index" ng-if="filterSelection.teamOn">
+			<label><input type="checkbox" ng-model="team.selected"/> {{team.name}} </label>
+		</div>
+		<div class="" ng-repeat="role in filters.role track by $index" ng-if="filterSelection.roleOn">
+			<label><input type="checkbox" ng-model="role.selected"/> {{role.name}} </label>
+		</div>
+	</div>
+</div>
